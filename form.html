@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Обратная связь — UEFA Champions League</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/i.webp" class="logo-img" alt="logo">
+                <span class="logo-text">UEFA Champions League</span>
+            </a>
+
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="matches.html" class="nav-link">Матчи</a></li>
+                    <li><a href="table.html" class="nav-link">Таблица</a></li>
+                    <li><a href="form.html" class="nav-link active">Обратная связь</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="form-page">
+        <h1 class="page-title">Свяжитесь с нами</h1>
+
+        <form id="feedbackForm" class="form-grid">
+            <label class="form-label">
+                Ваше имя:
+                <input type="text" id="name" class="form-input" required placeholder="Введите имя">
+            </label>
+
+            <label class="form-label">
+                Email:
+                <input type="email" id="email" class="form-input" required placeholder="Введите email">
+            </label>
+
+            <label class="form-label">
+                Любимая команда:
+                <select id="team" class="form-input">
+                    <option value="Реал">Реал Мадрид</option>
+                    <option value="Барселона">Барселона</option>
+                    <option value="Бавария">Бавария</option>
+                    <option value="ПСЖ">ПСЖ</option>
+                    <option value="Атлетико">Атлетико Мадрид</option>
+                </select>
+            </label>
+
+            <label class="form-label form-checkbox">
+                <input type="checkbox" id="agree" required>
+                Я согласен на обработку персональных данных
+            </label>
+
+            <button type="submit" class="form-btn">Отправить</button>
+        </form>
+
+        <p id="formMessage" class="form-message"></p>
+    </main>
+</body>
+</html>

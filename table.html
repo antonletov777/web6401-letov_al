@@ -1,111 +1,114 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Лига Чемпионов UEFA</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лига Чемпионов UEFA — Таблица</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
 
-    <body>
-        <header class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <a href="index.html" class="logo-link">
-                        <img src="images/i.webp" alt="Логотип" class="logo-img">
-                        <span class="logo-text">UEFA Champions League</span>
-                    </a>
-                </div>
-
-                <nav class="nav-menu">
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link active">Главная</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="matches.html" class="nav-link">Матчи</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="table.html" class="nav-link">Таблица</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
-        <main class="main-content">
-            <h1 class="page-title">Турнирная таблица Лиги Чемпионов</h1>
-            
-            <div class="table-caption">
-                Статистика команд в текущем сезоне
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link">
+                    <img src="images/i.webp" alt="Логотип" class="logo-img">
+                    <span class="logo-text">UEFA Champions League</span>
+                </a>
             </div>
 
-            <table class="stats-table">
-                <thead>
-                    <tr>
-                        <th>Команда</th>
-                        <th>Игры</th>
-                        <th>Победы</th>
-                        <th>Ничьи</th>
-                        <th>Поражения</th>
-                        <th>Забито</th>
-                        <th>Пропущено</th>
-                        <th>Очки</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="team-name">Реал Мадрид</td>
-                        <td>6</td>
-                        <td class="wins">5</td>
-                        <td class="draws">1</td>
-                        <td class="losses">0</td>
-                        <td class="goals">15</td>
-                        <td>4</td>
-                        <td><strong>16</strong></td>
-                    </tr>
-                    <tr>
-                        <td class="team-name">Бавария</td>
-                        <td>6</td>
-                        <td class="wins">4</td>
-                        <td class="draws">2</td>
-                        <td class="losses">0</td>
-                        <td class="goals">12</td>
-                        <td>5</td>
-                        <td><strong>14</strong></td>
-                    </tr>
-                    <tr>
-                        <td class="team-name">Барселона</td>
-                        <td>6</td>
-                        <td class="wins">4</td>
-                        <td class="draws">1</td>
-                        <td class="losses">1</td>
-                        <td class="goals">10</td>
-                        <td>6</td>
-                        <td><strong>13</strong></td>
-                    </tr>
-                    <tr>
-                        <td class="team-name">ПСЖ</td>
-                        <td>6</td>
-                        <td class="wins">3</td>
-                        <td class="draws">2</td>
-                        <td class="losses">1</td>
-                        <td class="goals">9</td>
-                        <td>7</td>
-                        <td><strong>11</strong></td>
-                    </tr>
-                    <tr>
-                        <td class="team-name">Атлетико Мадрид</td>
-                        <td>6</td>
-                        <td class="wins">2</td>
-                        <td class="draws">2</td>
-                        <td class="losses">2</td>
-                        <td class="goals">8</td>
-                        <td>8</td>
-                        <td><strong>8</strong></td>
-                    </tr>
-                </tbody>
-            </table>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="matches.html" class="nav-link">Матчи</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="table.html" class="nav-link active">Таблица</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="form.html" class="nav-link">Обратная связь</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        </main>
-    </body>
+    <main class="main-content">
+        <h1 class="page-title">Турнирная таблица Лиги Чемпионов</h1>
+
+        <div class="table-caption">
+            Статистика команд в текущем сезоне
+        </div>
+
+        <table class="stats-table">
+            <thead>
+                <tr>
+                    <th>Команда</th>
+                    <th>Игры</th>
+                    <th>Победы</th>
+                    <th>Ничьи</th>
+                    <th>Поражения</th>
+                    <th>Забито</th>
+                    <th>Пропущено</th>
+                    <th>Очки</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="team-name">Реал Мадрид</td>
+                    <td>6</td>
+                    <td class="wins">5</td>
+                    <td class="draws">1</td>
+                    <td class="losses">0</td>
+                    <td class="goals">15</td>
+                    <td>4</td>
+                    <td><strong>16</strong></td>
+                </tr>
+                <tr>
+                    <td class="team-name">Бавария</td>
+                    <td>6</td>
+                    <td class="wins">4</td>
+                    <td class="draws">2</td>
+                    <td class="losses">0</td>
+                    <td class="goals">12</td>
+                    <td>5</td>
+                    <td><strong>14</strong></td>
+                </tr>
+                <tr>
+                    <td class="team-name">Барселона</td>
+                    <td>6</td>
+                    <td class="wins">4</td>
+                    <td class="draws">1</td>
+                    <td class="losses">1</td>
+                    <td class="goals">10</td>
+                    <td>6</td>
+                    <td><strong>13</strong></td>
+                </tr>
+                <tr>
+                    <td class="team-name">ПСЖ</td>
+                    <td>6</td>
+                    <td class="wins">3</td>
+                    <td class="draws">2</td>
+                    <td class="losses">1</td>
+                    <td class="goals">9</td>
+                    <td>7</td>
+                    <td><strong>11</strong></td>
+                </tr>
+                <tr>
+                    <td class="team-name">Атлетико Мадрид</td>
+                    <td>6</td>
+                    <td class="wins">2</td>
+                    <td class="draws">2</td>
+                    <td class="losses">2</td>
+                    <td class="goals">8</td>
+                    <td>8</td>
+                    <td><strong>8</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
 </html>
