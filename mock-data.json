@@ -1,0 +1,84 @@
+{
+  "/standings": {
+    "get": {
+      "data": [
+        {
+          "id": 1,
+          "team": "Реал Мадрид",
+          "played": 6,
+          "wins": 5,
+          "draws": 1,
+          "losses": 0,
+          "gf": 15,
+          "ga": 4,
+          "points": 16
+        },
+        {
+          "id": 2,
+          "team": "Бавария",
+          "played": 6,
+          "wins": 4,
+          "draws": 2,
+          "losses": 0,
+          "gf": 12,
+          "ga": 5,
+          "points": 14
+        },
+        {
+          "id": 3,
+          "team": "Барселона",
+          "played": 6,
+          "wins": 4,
+          "draws": 1,
+          "losses": 1,
+          "gf": 11,
+          "ga": 6,
+          "points": 13
+        },
+        {
+          "id": 4,
+          "team": "ПСЖ",
+          "played": 6,
+          "wins": 3,
+          "draws": 2,
+          "losses": 1,
+          "gf": 10,
+          "ga": 7,
+          "points": 11
+        },
+        {
+          "id": 5,
+          "team": "Манчестер Сити",
+          "played": 6,
+          "wins": 3,
+          "draws": 1,
+          "losses": 2,
+          "gf": 9,
+          "ga": 6,
+          "points": 10
+        },
+        {
+          "id": 6,
+          "team": "Атлетико Мадрид",
+          "played": 6,
+          "wins": 2,
+          "draws": 2,
+          "losses": 2,
+          "gf": 8,
+          "ga": 8,
+          "points": 9
+        }
+      ]
+    }
+  },
+
+  "/feedback": {
+    "post": {
+      "data": [
+        {
+          "status": "ok"
+        }
+      ]
+    }
+  }
+}

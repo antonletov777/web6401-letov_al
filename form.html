@@ -29,34 +29,41 @@
     <main class="form-page">
         <h1 class="page-title">Свяжитесь с нами</h1>
 
-        <form id="feedbackForm" class="form-grid">
+        <form id="feedbackForm" class="form-grid" novalidate>
             <label class="form-label">
                 Ваше имя:
                 <input type="text" id="name" class="form-input" required placeholder="Введите имя">
+                <small class="hint" id="hint-name"></small>
             </label>
 
             <label class="form-label">
                 Email:
                 <input type="email" id="email" class="form-input" required placeholder="Введите email">
+                <small class="hint" id="hint-email"></small>
             </label>
 
             <label class="form-label">
                 Любимая команда:
                 <select id="team" class="form-input">
+                    <option value="">— выберите —</option>
                     <option value="Реал">Реал Мадрид</option>
                     <option value="Барселона">Барселона</option>
                     <option value="Бавария">Бавария</option>
                     <option value="ПСЖ">ПСЖ</option>
                     <option value="Атлетико">Атлетико Мадрид</option>
                 </select>
+                <small class="hint" id="hint-team"></small>
             </label>
 
             <label class="form-label form-checkbox">
                 <input type="checkbox" id="agree" required>
                 Я согласен на обработку персональных данных
             </label>
+            <small class="hint" id="hint-agree"></small>
 
             <button type="submit" class="form-btn">Отправить</button>
+
+            <div id="formStatus" class="form-message" aria-live="polite"></div>
         </form>
 
         <p id="formMessage" class="form-message"></p>
